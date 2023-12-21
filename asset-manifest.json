@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WhatchuListeningTo/static/css/main.0cd37b15.css",
+    "main.js": "/WhatchuListeningTo/static/js/main.c9c1fb39.js",
+    "static/js/787.808a3d54.chunk.js": "/WhatchuListeningTo/static/js/787.808a3d54.chunk.js",
+    "index.html": "/WhatchuListeningTo/index.html",
+    "main.0cd37b15.css.map": "/WhatchuListeningTo/static/css/main.0cd37b15.css.map",
+    "main.c9c1fb39.js.map": "/WhatchuListeningTo/static/js/main.c9c1fb39.js.map",
+    "787.808a3d54.chunk.js.map": "/WhatchuListeningTo/static/js/787.808a3d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0cd37b15.css",
+    "static/js/main.c9c1fb39.js"
+  ]
+}
