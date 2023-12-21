@@ -1,0 +1,7 @@
+/* TopTracks.module.css */
+
+.spotify-player-container iframe {
+    width: 100%;  /* Full width of the container */
+    max-width: 800px; /* Maximum width */
+    height: 600px; /* Height that displays more of the playlist */
+  }

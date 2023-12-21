@@ -1,13 +1,107 @@
-body {
+
+
+/* Reset some default styling and apply a modern sans-serif font */
+body, h1, h3, p {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Use a flexbox layout to center content vertically and horizontally */
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  /* text-align: center; /* Center text for a modern feel */
+  background: #fafafa; /* Light grey background for a subtle texture */
+  /* background: #1db9543a; */
+}
+
+/* Styling for the main content container */
+.contents {
+  max-width: 500px; /* Limit the width on large screens and allow some padding */
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Larger text for headlines */
+h1 {
+  font-size: 3.0rem; /* 40px */
+  font-weight: 500; /* Lighter font-weight */
+  line-height: 1.2; /* Tighter line spacing */
+  margin-bottom: 20px; /* Space after the headline */
+}
+
+/* Sub-headline styling */
+h3 {
+  font-size: 1.2rem; /* 24px */
+  font-weight: 500;
+  margin-bottom: 16px; /* Space after the sub-headline */
+}
+
+/* Paragraph styling */
+p {
+  font-size: 1rem; /* 16px */
+  color: #666; /* Slightly muted text color */
+  margin-bottom: 2em; /* Consistent margin for paragraphs */
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  width: 100%;
+  
+}
+
+._3xrlJ {
+  cursor: pointer;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content; */
+  
+}
+
+/* Button and link styling */
+button, a {
+  background: #1DB954; /* Spotify green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px; /* Rounded corners */
+  text-transform: uppercase; /* Uppercase text for buttons */
+  font-size: 0.875rem; /* Smaller font-size */
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* Allow width and height */
+}
+
+/* Ensure the Spotify player is responsive */
+.spotify-player-container iframe {
+  width: 100%; /* Full width of the container */
+  max-width: 600px; /* Maximum width */
+  height: 80vh; /* Use viewport height for dynamic sizing */
+  max-height: 500px; /* Maximum height */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem; /* Slightly smaller font size on mobile */
+  }
+
+  .spotify-player-container iframe {
+    height: 40vh; /* Adjust height for mobile devices */
+  }
 }
