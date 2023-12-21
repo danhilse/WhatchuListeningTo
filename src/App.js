@@ -28,7 +28,7 @@ const App = () => {
   return (
     
 <div className="contents">
-  
+   
   <div>
     <h1>Whatchu Listening To?</h1>
     <h3>Your music defines you. Sharing it shouldn't be a chore.</h3>
