@@ -41,7 +41,7 @@ const App = () => {
 <div className="player">
   {!token ? (
     <SpotifyAuth
-      redirectUri='http://localhost:3000/callback'
+      redirectUri='https://whatchu-listening-to-jio4.vercel.app/'
       clientID='a11e05ccf0944dd4b80f117a25913d00'
       scopes={['user-top-read', 'playlist-modify-public', 'playlist-modify-private', 'user-library-read']}
       onAccessToken={handleToken}
